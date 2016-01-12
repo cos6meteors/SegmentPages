@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SegmentPagesView.h
 //  SegmentPagesDemo
 //
 //  Created by 王春平 on 16/1/11.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ChangeViewController : UIViewController
 
 @end
-

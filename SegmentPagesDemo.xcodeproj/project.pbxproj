@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		EA1C2B2A1C4338F3006F439B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C2B291C4338F3006F439B /* main.m */; };
 		EA1C2B2D1C4338F3006F439B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C2B2C1C4338F3006F439B /* AppDelegate.m */; };
-		EA1C2B301C4338F3006F439B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C2B2F1C4338F3006F439B /* ViewController.m */; };
 		EA1C2B331C4338F3006F439B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1C2B311C4338F3006F439B /* Main.storyboard */; };
 		EA1C2B351C4338F3006F439B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1C2B341C4338F3006F439B /* Assets.xcassets */; };
 		EA1C2B381C4338F3006F439B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1C2B361C4338F3006F439B /* LaunchScreen.storyboard */; };
 		EA1C2B431C4338F3006F439B /* SegmentPagesDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C2B421C4338F3006F439B /* SegmentPagesDemoTests.m */; };
 		EA1C2B4E1C4338F3006F439B /* SegmentPagesDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C2B4D1C4338F3006F439B /* SegmentPagesDemoUITests.m */; };
+		EA1C2B5D1C433908006F439B /* ChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C2B5C1C433908006F439B /* ChangeViewController.m */; };
+		EA1C2B681C435A86006F439B /* SegmentPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C2B671C435A86006F439B /* SegmentPagesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		EA1C2B291C4338F3006F439B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA1C2B2B1C4338F3006F439B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA1C2B2C1C4338F3006F439B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EA1C2B2E1C4338F3006F439B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EA1C2B2F1C4338F3006F439B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EA1C2B321C4338F3006F439B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA1C2B341C4338F3006F439B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA1C2B371C4338F3006F439B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,11 @@
 		EA1C2B491C4338F3006F439B /* SegmentPagesDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegmentPagesDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1C2B4D1C4338F3006F439B /* SegmentPagesDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentPagesDemoUITests.m; sourceTree = "<group>"; };
 		EA1C2B4F1C4338F3006F439B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1C2B5B1C433908006F439B /* ChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeViewController.h; sourceTree = "<group>"; };
+		EA1C2B5C1C433908006F439B /* ChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeViewController.m; sourceTree = "<group>"; };
+		EA1C2B651C434B1F006F439B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EA1C2B661C435A86006F439B /* SegmentPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentPagesView.h; sourceTree = "<group>"; };
+		EA1C2B671C435A86006F439B /* SegmentPagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentPagesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +107,10 @@
 			children = (
 				EA1C2B2B1C4338F3006F439B /* AppDelegate.h */,
 				EA1C2B2C1C4338F3006F439B /* AppDelegate.m */,
-				EA1C2B2E1C4338F3006F439B /* ViewController.h */,
-				EA1C2B2F1C4338F3006F439B /* ViewController.m */,
+				EA1C2B5B1C433908006F439B /* ChangeViewController.h */,
+				EA1C2B5C1C433908006F439B /* ChangeViewController.m */,
+				EA1C2B661C435A86006F439B /* SegmentPagesView.h */,
+				EA1C2B671C435A86006F439B /* SegmentPagesView.m */,
 				EA1C2B311C4338F3006F439B /* Main.storyboard */,
 				EA1C2B341C4338F3006F439B /* Assets.xcassets */,
 				EA1C2B361C4338F3006F439B /* LaunchScreen.storyboard */,
@@ -118,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				EA1C2B291C4338F3006F439B /* main.m */,
+				EA1C2B651C434B1F006F439B /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -270,9 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1C2B301C4338F3006F439B /* ViewController.m in Sources */,
 				EA1C2B2D1C4338F3006F439B /* AppDelegate.m in Sources */,
+				EA1C2B5D1C433908006F439B /* ChangeViewController.m in Sources */,
 				EA1C2B2A1C4338F3006F439B /* main.m in Sources */,
+				EA1C2B681C435A86006F439B /* SegmentPagesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SegmentPagesDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SegmentPagesDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chunping.SegmentPagesDemo;
@@ -424,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SegmentPagesDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SegmentPagesDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chunping.SegmentPagesDemo;

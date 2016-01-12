@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  SegmentPagesDemo
+//
+//  Created by 王春平 on 16/1/11.
+//  Copyright © 2016年 wang. All rights reserved.
+//
+
+
+#define GrayColor [UIColor colorWithRed:0.548 green:0.540 blue:0.497 alpha:1.000]
+#define RedColor [UIColor colorWithRed:1.000 green:0.314 blue:0.353 alpha:1.000]
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#import "SegmentPagesView.h"
+#import "ChangeViewController.h"
