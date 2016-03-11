@@ -24,16 +24,15 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
         y = self.navigationController.navigationBar.bounds.size.height + [UIApplication sharedApplication].statusBarFrame.size.height;
     }
-    
     SegmentPagesView *segView = [[SegmentPagesView alloc] initWithFrame:CGRectMake(0, 20, ScreenWidth, ScreenHeight)];
     segView.buttonTitleArray = @[@"已领取", @"已消费", @"已过期"];
-    UIView *redView = [[UIView alloc] init];
-    redView.backgroundColor = [UIColor grayColor];
+    UIView *grayView = [[UIView alloc] init];
+    grayView.backgroundColor = [UIColor colorWithRed:0.894 green:0.217 blue:0.825 alpha:1.000];
     UIView *yellowView = [[UIView alloc] init];
     yellowView.backgroundColor = [UIColor yellowColor];
     UIView *greenView = [[UIView alloc] init];
     greenView.backgroundColor = [UIColor greenColor];
-    segView.pageViewArray = @[redView, yellowView, greenView];
+    segView.pageViewArray = @[grayView, yellowView, greenView];
     [segView getBlockFromOutSpace:^(NSUInteger selectIndex) {
         //do some operations after select
     }];

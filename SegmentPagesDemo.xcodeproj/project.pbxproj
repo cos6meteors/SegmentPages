@@ -16,6 +16,7 @@
 		EA1C2B4E1C4338F3006F439B /* SegmentPagesDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C2B4D1C4338F3006F439B /* SegmentPagesDemoUITests.m */; };
 		EA1C2B5D1C433908006F439B /* ChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C2B5C1C433908006F439B /* ChangeViewController.m */; };
 		EA1C2B681C435A86006F439B /* SegmentPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1C2B671C435A86006F439B /* SegmentPagesView.m */; };
+		EAC1120E1C929B460081443B /* UIView+ModifyAttributeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1120D1C929B460081443B /* UIView+ModifyAttributeValue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		EA1C2B651C434B1F006F439B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		EA1C2B661C435A86006F439B /* SegmentPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentPagesView.h; sourceTree = "<group>"; };
 		EA1C2B671C435A86006F439B /* SegmentPagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentPagesView.m; sourceTree = "<group>"; };
+		EAC1120C1C929B460081443B /* UIView+ModifyAttributeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ModifyAttributeValue.h"; sourceTree = "<group>"; };
+		EAC1120D1C929B460081443B /* UIView+ModifyAttributeValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ModifyAttributeValue.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				EA1C2B5C1C433908006F439B /* ChangeViewController.m */,
 				EA1C2B661C435A86006F439B /* SegmentPagesView.h */,
 				EA1C2B671C435A86006F439B /* SegmentPagesView.m */,
+				EAC1120C1C929B460081443B /* UIView+ModifyAttributeValue.h */,
+				EAC1120D1C929B460081443B /* UIView+ModifyAttributeValue.m */,
 				EA1C2B311C4338F3006F439B /* Main.storyboard */,
 				EA1C2B341C4338F3006F439B /* Assets.xcassets */,
 				EA1C2B361C4338F3006F439B /* LaunchScreen.storyboard */,
@@ -279,6 +284,7 @@
 			files = (
 				EA1C2B2D1C4338F3006F439B /* AppDelegate.m in Sources */,
 				EA1C2B5D1C433908006F439B /* ChangeViewController.m in Sources */,
+				EAC1120E1C929B460081443B /* UIView+ModifyAttributeValue.m in Sources */,
 				EA1C2B2A1C4338F3006F439B /* main.m in Sources */,
 				EA1C2B681C435A86006F439B /* SegmentPagesView.m in Sources */,
 			);
@@ -508,6 +514,7 @@
 				EA1C2B541C4338F3006F439B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA1C2B551C4338F3006F439B /* Build configuration list for PBXNativeTarget "SegmentPagesDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +523,7 @@
 				EA1C2B571C4338F3006F439B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA1C2B581C4338F3006F439B /* Build configuration list for PBXNativeTarget "SegmentPagesDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +532,7 @@
 				EA1C2B5A1C4338F3006F439B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

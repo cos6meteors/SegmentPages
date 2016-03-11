@@ -23,11 +23,12 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.buttonFontSize = 15;
-        self.selectButtonColor = RedColor;
-        self.buttonColor = GrayColor;
-        self.topScrollViewHeight = 44;
-        self.buttonWidth = 80;
+        _buttonFontSize = 15;
+        _selectButtonColor = RedColor;
+        _buttonColor = GrayColor;
+        _topScrollViewHeight = 44;
+        _buttonWidth = 80;
+        _selectIndex = 0;
     }
     return self;
 }
@@ -35,13 +36,6 @@
 //从外界传入block，并赋值给self.block
 - (void)getBlockFromOutSpace:(SelectIndexBlock)block {
     self.block = block;
-}
-
-//修改视图的origin
-- (void)setOrigin:(CGPoint)origin view:(UIView *)view {
-    CGRect frame = view.frame;
-    frame.origin = origin;
-    view.frame = frame;
 }
 
 #pragma mark - setter method
@@ -104,7 +98,7 @@
     for (NSUInteger i = 0; i < _buttonTitleArray.count; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(i * _buttonWidth, 0, _buttonWidth, _topScrollViewHeight);
-        button.tag = i;
+        button.tag = i + 1;
         [button setTitle:_buttonTitleArray[i] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(handlePress:) forControlEvents:UIControlEventTouchDown];
         button.titleLabel.font = [UIFont systemFontOfSize:_buttonFontSize];
@@ -140,21 +134,23 @@
 
 //点击按钮
 - (void)handlePress:(UIButton *)btn {
-    self.selectIndex = btn.tag;
+    self.selectIndex = btn.tag - 1;
 }
 
 #pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    CGFloat newLineViewX = self.buttonWidth * scrollView.contentOffset.x / ScreenWidth;
     if (scrollView == _rootScrollView) {
+        CGFloat newLineViewX = self.buttonWidth * scrollView.contentOffset.x / ScreenWidth;
         //修改横线视图的位置
-        [self setOrigin:CGPointMake(newLineViewX, _topScrollViewHeight - 2) view:self.lineView];
+        [self.lineView setOrigin:CGPointMake(newLineViewX, _topScrollViewHeight - 2)];
     }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    self.selectIndex = scrollView.contentOffset.x / ScreenWidth;
+    if (scrollView == _rootScrollView) {
+        self.selectIndex = scrollView.contentOffset.x / ScreenWidth;
+    }
 }
 
 @end
