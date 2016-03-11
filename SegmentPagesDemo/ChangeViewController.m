@@ -27,7 +27,7 @@
     SegmentPagesView *segView = [[SegmentPagesView alloc] initWithFrame:CGRectMake(0, 20, ScreenWidth, ScreenHeight)];
     segView.buttonTitleArray = @[@"已领取", @"已消费", @"已过期"];
     UIView *grayView = [[UIView alloc] init];
-    grayView.backgroundColor = [UIColor colorWithRed:0.894 green:0.217 blue:0.825 alpha:1.000];
+    grayView.backgroundColor = [UIColor grayColor];
     UIView *yellowView = [[UIView alloc] init];
     yellowView.backgroundColor = [UIColor yellowColor];
     UIView *greenView = [[UIView alloc] init];
